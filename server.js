@@ -8,7 +8,7 @@ app.use(morgan('combined'));
 var articles = {
     'article-one' :{
   title: 'Artilce-One | Gokulakannan',
-  heading: 'Article-One',
+  heading: 'Article One',
   date: 'Sep 5 2017',
   content: `<p>this is m article one and also this is my first web app, lets see how it comes</p>
             <p>this is m article one and also this is my first web app, lets see how it comes</p><p>this is m article one and also this is my first web app, lets see how it comes</p><p>this is m article one and also this is my first web app, lets see how it comes</p><p>this is m article one and also this is my first web app, lets see how it comes</p><p>this is m article one and also this is my first web app, lets see how it comes</p><p>this is m article one and also this is my first web app, lets see how it comes</p><p>this is m article one and also this is my first web app, lets see how it comes</p>
