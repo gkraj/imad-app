@@ -14,13 +14,13 @@ var articles = {
             <p>this is m article one and also this is my first web app, lets see how it comes</p><p>this is m article one and also this is my first web app, lets see how it comes</p><p>this is m article one and also this is my first web app, lets see how it comes</p><p>this is m article one and also this is my first web app, lets see how it comes</p><p>this is m article one and also this is my first web app, lets see how it comes</p><p>this is m article one and also this is my first web app, lets see how it comes</p><p>this is m article one and also this is my first web app, lets see how it comes</p>
   `
 },
-    artilceTwo : {
+    'artilce-two' : {
         title: 'Artilce-Two | Gokulakannan',
         heading: 'Article-Two',
         date: 'Sep 6 2017',
         content: `<p>this is m article one and also this is my first web app, lets see how it comes</p>`
     },
-    artilceThree : {
+    'artilce-three' : {
         title: 'Artilce-Three | Gokulakannan',
         heading: 'Article-Three',
         date: 'Sep 7 2017',
