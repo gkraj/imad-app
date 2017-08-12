@@ -22,11 +22,11 @@ var nameInput = document.getElementById('name');
 var name = nameInput.value;
 var submit = document.getElementById('submit-btn');
 submit.onclick = function(){
-    var names = ['name1', 'name2', 'name3'];
+    var names = ['name1', 'name2', 'name3', 'name4'];
     var list = '';
-    for(i=0;name++;i<names.length){
+    for( var i=0; name++; i<names.length){
         list += '<li>'+names[i]+ '</li>';
     }
-  var ul = document.getElementById('namelist');
+  var ul = document.getElementById('nameList');
   ul.innerHTML = list;
 };
