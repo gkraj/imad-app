@@ -22,10 +22,10 @@ var nameInput = document.getElementById('name');
 var name = nameInput.value;
 var submit = document.getElementById('submit-btn');
 submit.onclick = function(){
-    var name = ['name1', 'name2', 'name3'];
+    var names = ['name1', 'name2', 'name3'];
     var list = '';
-    for(name=0;name++;name>0){
-        list += '<li>'+name '</li>';
+    for(i=0;name++;i<names.length){
+        list += '<li>'+names[i]+ '</li>';
     }
   var ul = document.getElementById('namelist');
   ul.innerHTML = list;
