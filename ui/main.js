@@ -5,10 +5,10 @@ button.onclick = function(){
   var request = new XMLHttpRequest();
   request.onreadystatechange = function(){
       //if ready
-    if (request.readystate === XMLHttpRequest.DONE){
-        if(request.status === 200){
-            var counter = request.responsetext;
-            var span = document.getElementbyId('count');
+    if (request.readystate == XMLHttpRequest.DONE){
+        if(request.status == 200){
+            var counter = request.responseText;
+            var span = document.getElementById('count');
             span.innerHTML = counter.toString();
         }
     }  
