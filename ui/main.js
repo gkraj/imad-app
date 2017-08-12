@@ -15,7 +15,7 @@ button.onclick = function(){
     //not ready
   };
   //made a request
-  request.open('GET', 'https://ggokulrajan.imad.hasura-app.io/counter', true);
+  request.open('GET', 'http://ggokulrajan.imad.hasura-app.io/counter', true);
   request.send(null);
 
 };
