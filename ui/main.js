@@ -18,7 +18,7 @@ button.onclick = function(){
   request.open('GET', 'http://ggokulrajan.imad.hasura-app.io/counter', true);
   request.send(null);
 };
-;
+
 var submit = document.getElementById('submit-btn');
 submit.onclick = function(){
     var request = new XMLHttpRequest();
@@ -40,7 +40,7 @@ submit.onclick = function(){
   };
   //made a request
   var nameInput = document.getElementById('name');
-  var name = nameInput.value
+  var name = nameInput.value;
   request.open('GET', 'http://ggokulrajan.imad.hasura-app.io/submit-name?name='+name, true);
   request.send(null);
 };
