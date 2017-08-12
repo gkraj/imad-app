@@ -17,5 +17,16 @@ button.onclick = function(){
   //made a request
   request.open('GET', 'http://ggokulrajan.imad.hasura-app.io/counter', true);
   request.send(null);
-
+};
+var nameInput = document.getElementById('name');
+var name = nameInput.value;
+var submit = document.getElementById('submit-btn');
+submit.onclick = function(){
+    var name = ['name1', 'name2', 'name3'];
+    var list = '';
+    for(name=0;name++;name>0){
+        list += '<li>'+name '</li>';
+    }
+  var ul = document.getElementById('namelist');
+  ul.innerHTML = list;
 };
