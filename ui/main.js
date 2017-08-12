@@ -22,11 +22,23 @@ var nameInput = document.getElementById('name');
 var name = nameInput.value;
 var submit = document.getElementById('submit-btn');
 submit.onclick = function(){
-    var names = ['name1', 'name2', 'name3', 'name4'];
-    var list = '';
-    for( var i=0;i<names.length; i++ ){
-        list += '<li>'+names[i]+ '</li>';
-    }
-  var ul = document.getElementById('nameList');
-  ul.innerHTML = list;
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = function(){
+      //if ready
+        if (request.readyState === XMLHttpRequest.DONE){
+            if(request.status === 200){
+                var names = ['name1', 'name2', 'name3', 'name4'];
+                var list = '';
+                for( var i=0;i<names.length; i++ ){
+                list += '<li>'+names[i]+ '</li>';
+                 }
+     var ul = document.getElementById('nameList');
+     ul.innerHTML = list;
+        }
+    }  
+    //not ready
+  };
+  //made a request
+  request.open('GET', 'http://ggokulrajan.imad.hasura-app.io/submit-name?name='+name, true);
+  request.send(null);
 };
