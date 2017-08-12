@@ -5,7 +5,7 @@ button.onclick = function(){
   var request = new XMLHttpRequest();
   request.onreadystatechange = function(){
       //if ready
-    if (request.readystate === XMLHttpRequest.DONE){
+    if (request.readyState === XMLHttpRequest.DONE){
         if(request.status === 200){
             var counter = request.responseText;
             var span = document.getElementById('count');
@@ -18,8 +18,8 @@ button.onclick = function(){
   request.open('GET', 'http://ggokulrajan.imad.hasura-app.io/counter', true);
   request.send(null);
 
-    var counter = 0;
+    /* var counter = 0;
     counter = counter +1;
     var span = document.getElementById('count');
-    span.innerHTML = counter.toString();
+    span.innerHTML = counter.toString(); */
 };
