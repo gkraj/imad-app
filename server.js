@@ -56,6 +56,11 @@ function createTemplate(data){
             </div>
             </div>
         </body>
+        <br/><hr/>
+        <footer>
+        <input type="text" id="text_box" placeholder = "Comment Section"></input>
+        <button type="submit" id="submit_button">Submit</button>
+        </footer>
         </html>
 `;
     return htmlTemplate;
