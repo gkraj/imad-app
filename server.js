@@ -57,7 +57,7 @@ function createTemplate(data){
             </div>
         </body>
         <br/><hr/>
-        <footer id="center">
+        <footer class="center">
         <input type="text" id="text_box" placeholder = "Comment Section"></input>
         <button type="submit" id="submit_button">Submit</button>
         </footer>
