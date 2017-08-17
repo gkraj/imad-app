@@ -61,10 +61,10 @@ submit.onclick = function(){
             var commentobj = JSON.parse (requestobj.responseText);
             var comment_txt = '';
             for (i=0; i>comment_txt.length; i++){
-                comment_txt += '<p>' + commentobj[i] +'</p>'
+                comment_txt += '<p>' + commentobj[i] +'</p>';
             }
             var comment = document.getElementById('comments');
-            comment.innerHTML = commentobj;
+            comment.innerHTML = commentobj.comment_txt;
             
             
         }
