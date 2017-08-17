@@ -49,6 +49,7 @@ submit.onclick = function(){
 var submit = document.getElementById('submit_button');
 submit onclick = function(){
   
-  
-  var paragraph = document.getElementById('para_in')  
+  var comment = '';
+  var paragraph = document.getElementById('para_in');
+  paragraph.innerHTML = comment;
 };
