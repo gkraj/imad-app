@@ -44,3 +44,11 @@ submit.onclick = function(){
   request.open('GET', 'http://ggokulrajan.imad.hasura-app.io/submit-name?name='+name, true);
   request.send(null);
 };
+
+
+var submit = document.getElementById('submit_button');
+submit onclick = function(){
+  
+  
+  var paragraph = document.getElementById('para_in')  
+};
