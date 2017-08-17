@@ -45,17 +45,44 @@ submit.onclick = function(){
   request.send(null);
 };
 
-
-/*var submita = document.getElementById('submit_button');
-submita onclick = function(){
-    var request = new XMLHttpRequest();
+var submitobj = document.getElementById('submit_button'); 
+    //value of id assign it to submitobj
+submit.onclick = function(){ 
+    //clicking the submit btn will call fnt
+    var requestobj = new XMLHttpRequest(); 
+    // create obj requestobj for html getting value as html
+    // after clicking sending hte request to server as html value
     request.onreadystatechange = function(){
-      if(request.readystate === XMLHttpRequest.DONE){
-          
-      }  
+    if (requestobj.readystate === XMLHttpRequest.DONE){ 
+        if(requestobj.response === 200){ 
+            //after successfully sending res to server it will resposne as 200 means success
+            //creating obj for response text which we entered
+            //json.parse is used to convet the html to js obj
+            var commentobj = JSON.parse (requestobj.responseText);
+            var comment_txt = '';
+            for (i=0; i>comment_txt.length; i++){
+                comment_txt += '<p>' + commentobj[i] +'</p>'
+            }
+            var comment = document.getElementById('comments');
+            comment.innerHTML = commentobj;
+            
+            
+        }
+    }
     };
-  
-};
-  var comment = '';
-  var paragraph = document.getElementById('para_in');
-  paragraph.innerHTML = comment; */
+    
+ };
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
