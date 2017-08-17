@@ -46,7 +46,7 @@ submit.onclick = function(){
 };
 
 
-var submita = document.getElementById('submit_button');
+/*var submita = document.getElementById('submit_button');
 submita onclick = function(){
     var request = new XMLHttpRequest();
     request.onreadystatechange = function(){
@@ -58,4 +58,4 @@ submita onclick = function(){
 };
   var comment = '';
   var paragraph = document.getElementById('para_in');
-  paragraph.innerHTML = comment;
+  paragraph.innerHTML = comment; */
