@@ -46,11 +46,16 @@ submit.onclick = function(){
 };
 
 
-var submit = document.getElementById('submit_button');
-submit onclick = function(){
-  
+var submita = document.getElementById('submit_button');
+submita onclick = function(){
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = function(){
+      if(request.readystate === XMLHttpRequest.DONE){
+          
+      }  
+    };
   
 };
-var comment = '';
+  var comment = '';
   var paragraph = document.getElementById('para_in');
   paragraph.innerHTML = comment;
