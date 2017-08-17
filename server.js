@@ -60,6 +60,7 @@ function createTemplate(data){
         <footer class="container">
         <input type="text" id="text_box" placeholder = "Comment Section"></input>
         <input type="submit" id="submit_button">Submit</input>
+        <p id="paragraph"></p>
         </footer>
         </html>
 `;
