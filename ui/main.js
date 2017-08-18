@@ -60,20 +60,19 @@ submit.onclick = function(){
             //json.parse is used to convet the html to js obj
             var commentobj = JSON.parse (requestobj.responseText);
             var comment_txt = '';
-            for (i=0; i>comment_txt.length; i++){
+            for (i=0; i<comment_txt.length; i++){
                 comment_txt += '<p>' + commentobj[i] +'</p>';
             }
             var comment = document.getElementById('comments');
-            comment.innerHTML = commentobj.comment_txt;
-            
-            
+            comment.innerHTML = comment_txt;
         }
     }
     };
-    
+var text_out = document.getElementById('text_box');
+var text_box = text_out.value;
+request.open('GET', 'http://ggokulrajan.imad.hasura-app.io/article-one/' +text_out, true);
+request.send(null);
  };
- 
- 
  
  
  
