@@ -70,7 +70,7 @@ submit.onclick = function(){
     };
 var text_out = document.getElementById('text_box');
 var text_box = text_out.value;
-request.open('GET', 'http://ggokulrajan.imad.hasura-app.io/article-one/' +text_out, true);
+request.open('GET', 'http://ggokulrajan.imad.hasura-app.io/articleName/submit?text_box=' +text_box, true);
 request.send(null);
  };
  
