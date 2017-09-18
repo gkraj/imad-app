@@ -57,11 +57,11 @@ function createTemplate(data){
             </div>
         </body>
         <br/><hr/>
-        <footer class="container">
+        /*<footer class="container">
         <input type="text" id="text_box" placeholder = "Comment Section"></input>
         <input type="submit" id="submit_button"></input>
         <p id="comments"></p>
-        </footer> 
+        </footer> */
         </html>
 `;
     return htmlTemplate;
