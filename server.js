@@ -56,14 +56,9 @@ function createTemplate(data){
             </div>
             </div>
         </body>
-        <br/><hr/>
-        /*<footer class="container">
-        <input type="text" id="text_box" placeholder = "Comment Section"></input>
-        <input type="submit" id="submit_button"></input>
-        <p id="comments"></p>
-        </footer> */
+        <br/>
         </html>
-`;
+;
     return htmlTemplate;
 }
 app.get('/', function (req, res) {
