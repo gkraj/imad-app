@@ -45,7 +45,7 @@ submit.onclick = function(){
   request.send(null);
 };
 
-var submitobj = document.getElementById('submit_button'); 
+/*var submitobj = document.getElementById('submit_button'); 
     //value of id assign it to submitobj
 submit.onclick = function(){ 
     //clicking the submit btn will call fnt
@@ -73,7 +73,7 @@ var text_box = text_out.value;
 request.open('GET', 'http://ggokulrajan.imad.hasura-app.io/articleName/submit?text_box=' +text_box, true);
 request.send(null);
  };
- 
+ */
  
  
  
