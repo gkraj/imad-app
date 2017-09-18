@@ -64,13 +64,6 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-/*var names = [];
-app.get('/submit-name', function(req,res){
-   var name = req.query.name;
-   names.push(name);
-   res.send(JSON.stringify(names));
-}); */
-
 var commentobj = [];
 app.get('/:articleName/submit', function(req,res){
    var text_box = req.query.text_box;
