@@ -13,28 +13,6 @@ var config = {
 var app = express();
 app.use(morgan('combined'));
 
-var articles = {
-    'article-one' :{
-  title: 'Artilce-One | Gokulakannan',
-  heading: 'Article One',
-  date: 'Sep 5 2017',
-  content: `<p>this is m article one and also this is my first web app, lets see how it comes</p>
-            <p>this is m article one and also this is my first web app, lets see how it comes</p><p>this is m article one and also this is my first web app, lets see how it comes</p><p>this is m article one and also this is my first web app, lets see how it comes</p><p>this is m article one and also this is my first web app, lets see how it comes</p><p>this is m article one and also this is my first web app, lets see how it comes</p><p>this is m article one and also this is my first web app, lets see how it comes</p><p>this is m article one and also this is my first web app, lets see how it comes</p>
-  `
-},
-    'article-two' : {
-        title: 'Artilce-Two | Gokulakannan',
-        heading: 'Article-Two',
-        date: 'Sep 6 2017',
-        content: `<p>this is m article one and also this is my first web app, lets see how it comes</p>`
-    },
-    'article-three' : {
-        title: 'Artilce-Three | Gokulakannan',
-        heading: 'Article-Three',
-        date: 'Sep 7 2017',
-        content: `<p>this is m article one and also this is my first web app, lets see how it comes</p>`
-    },
-};
 function createTemplate(data){
     var title = data.title;
     var heading = data.heading;
