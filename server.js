@@ -100,7 +100,7 @@ app.post('/login', function(req,res){
               res.send(403).send('no user name found');
           }else{
               //match the password
-              var dbString = result.rows[0].password;
+              var dbString = result.row[0].password;
               var salt = dbString.split('$')[2];
               var hashedPassword = hash(password, salt);
               if(hashedPassword === dbString){
