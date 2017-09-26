@@ -98,7 +98,7 @@ app.post('/login', function(req,res){
       } else{
           if(result.rows.length === 0){
               // if table contain zero rows
-              res.send(403).send('no user name found');
+              res.status(403).send('no user name found');
           }else{
               //match the password
               var dbString = result.rows[0].password;
@@ -107,7 +107,7 @@ app.post('/login', function(req,res){
               if(hashedPassword === dbString){
                   res.send('password is correct');
               }else{
-                  res.send(403).send('password is incorrect');
+                  res.status(403).send('password is incorrect');
               }
               
           } 
