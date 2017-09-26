@@ -86,7 +86,7 @@ app.post('/create-user', function(req,res){
       } 
    });
 });
-
+var pool = new Pool(config);
 app.post('/login', function(req,res){
    var username = req.body.username;
    var password = req.body.password;
@@ -95,7 +95,7 @@ app.post('/login', function(req,res){
       if (err){
           res.status(500).send(err.toString());
       } else{
-          if(result.rows.length === 0){
+          if(results.rows.length === 0){
               // if table contain zero rows
               res.send(403).send('no user name found');
           }else{
