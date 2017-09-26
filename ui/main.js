@@ -1,6 +1,6 @@
 
 //login form
-var submit = document.getElementById('submit-btn');
+var submit = document.getElementById('submit_btn');
 submit.onclick = function(){
     var request = new XMLHttpRequest();
     request.onreadystatechange = function(){
@@ -10,7 +10,7 @@ submit.onclick = function(){
                 alert('successfully logged in');
                 }else if (request.status === 403){
                     alert('username/password is incorrect');
-                }else if (request.status === 403){
+                }else if (request.status === 500){
                     alert('something wrong in server');
                 }
     }  
