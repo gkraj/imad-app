@@ -6,6 +6,7 @@ var Pool = require('pg').Pool;
 var crypto = require('crypto');
 var bodyParser = require('body-parser');
 var pool = new Pool(config);
+
 var config = {
     user: 'ggokulrajan',
     database: 'ggokulrajan',
