@@ -5,7 +5,7 @@ var path = require('path');
 var Pool = require('pg').Pool;
 var crypto = require('crypto');
 var bodyParser = require('body-parser');
-var pool = new Pool(config);
+
 
 var config = {
     user: 'ggokulrajan',
@@ -72,6 +72,7 @@ app.get('/hash/:input', function(req,res){
    res.send(hashedString);
 });
 
+var pool = new Pool(config);
 app.post('/create-user', function(req,res){
 //user name, passsword
 //'{"username":"ggokulrajan", "password":"password"} '
